@@ -43,6 +43,7 @@ end
   end
 
   def over?(board)
+<<<<<<< HEAD
     if draw?(board) == true
         true
     elsif won?(board) != false
@@ -57,4 +58,20 @@ end
       position_1 = board[win_index_1]
       position_1
     end
+=======
+    # if full?(board) == true
+    #   if draw?(board)== true
+    #     true
+    #   end
+    # end
+    if full?(board) == true
+      if won?(board)== false
+        true
+      end
+    end
+  end
+
+  def winner?
+
+>>>>>>> abebc02f93767fea2ba98612e1361f02004dcd13
   end
